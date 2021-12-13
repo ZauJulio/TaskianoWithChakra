@@ -56,6 +56,22 @@ export default class MyDocument extends Document {
           <meta name="msapplication-tap-highlight" content="no" />
           <meta name="theme-color" content="#06092b" />
 
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+            rel="stylesheet"
+          />
           <link rel="apple-touch-icon" href="/icons/touch-icon.png" />
           <link
             rel="apple-touch-icon"

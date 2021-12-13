@@ -1,6 +1,12 @@
-# ZBP - 🔎🧪⚛🎨
+<h1>Taskiano: Chakra-UI Version</h1>
 
-Boilerplate Nextjs + Typescript with tests, PWA (Optional), code styling, templates and git hooks.
+<p align="center">
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white"/>
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+  <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white"/>
+</p>
 
 - [[Eslint 🔎]](https://github.com/eslint/eslint): Analyzes the code and generates error warnings.
 - [[Prettier 🎨]](https://github.com/prettier/prettier): formats the code, giving that little hand to Eslint and reverse.
@@ -17,11 +23,7 @@ Boilerplate Nextjs + Typescript with tests, PWA (Optional), code styling, templa
 ## Installation
 
 ```console
-foo@bar:~$ npm create-next-app -e https://github.com/ZauJulio/ZBP
-
-or
-
-foo@bar:~$ yarn create next-app -e https://github.com/ZauJulio/ZBP
+foo@bar:~$ yarn install
 ```
 
 ## Scripts
@@ -41,7 +43,9 @@ foo@bar:~$ yarn create next-app -e https://github.com/ZauJulio/ZBP
 }
 ```
 
-Inspired by: React Avançado course;
+### Based on: [Taskiano](https://github.com/ZauJulio/Taskiano)
+
+### Bootsraped with: [ZBP](https://github.com/ZauJulio/ZBP)
 
 <div align="center">
   <p>ZauJulio 🧪</p>

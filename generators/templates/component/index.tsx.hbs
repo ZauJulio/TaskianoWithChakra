@@ -1,9 +1,14 @@
-import * as S from './styles'
+import { Center, Flex, Text } from '@chakra-ui/react'
 
-const {{pascalCase name}} = () => (
-  <S.Wrapper>
-    <h1>{{pascalCase name}}</h1>
-  </S.Wrapper>
-)
+const {{pascalCase name}} = () => {
+  return (
+    <Flex color="white">
+      <Center>
+        <Text>{{pascalCase name}}</Text>
+      </Center>
+    </Flex>
+  )
+}
+
 
 export default {{pascalCase name}}

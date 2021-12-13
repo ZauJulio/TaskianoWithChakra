@@ -1,5 +1,3 @@
-import Main from 'components/Main'
+import Root from 'components/Pages/Root'
 
-export default function Home() {
-  return <Main />
-}
+export default Root

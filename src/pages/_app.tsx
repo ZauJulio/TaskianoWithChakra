@@ -1,25 +1,52 @@
 import type { AppProps } from 'next/app'
-import Head from 'next/head'
+import { useRouter } from 'next/router'
+import { ChakraProvider } from '@chakra-ui/react'
 
+import { ToastContainer } from 'react-toastify'
+
+import {
+  AuthContextProvider,
+  ProjectsContextProvider,
+  TasksContextProvider,
+  HistoryContextProvider
+} from 'contexts'
+
+import Loader from 'components/Loader'
+import HeadMain from 'components/Headers/HeadMain'
+
+import theme from 'styles/theme'
 import GlobalStyles from 'styles/global'
+import 'react-toastify/dist/ReactToastify.css'
+
+import 'lib/services/Firebase'
 
 function App({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Head>
-        <title>Boilerplate</title>
-        <link rel="shortcut icon" href="/icons/favicon.ico" />
-        <link rel="apple-touch-icon" href="/icons/favicon.ico" />
-        <meta name="description" content="Simple description" />
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover"
-        />
-      </Head>
+  const router = useRouter()
 
+  return (
+    <ChakraProvider theme={theme}>
+      <HeadMain />
       <GlobalStyles />
-      <Component {...pageProps} />
-    </>
+
+      <Loader />
+
+      <ToastContainer
+        theme="dark"
+        className={'--toastify-color-dark:#1e202a !important'}
+        style={{ position: 'fixed', zIndex: 999999 }}
+        position="bottom-right"
+      />
+
+      <AuthContextProvider router={router}>
+        <HistoryContextProvider>
+          <ProjectsContextProvider>
+            <TasksContextProvider>
+              <Component {...pageProps} />
+            </TasksContextProvider>
+          </ProjectsContextProvider>
+        </HistoryContextProvider>
+      </AuthContextProvider>
+    </ChakraProvider>
   )
 }
 
